@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>7DaysOfCode - Lógica JS 3/7: Fluxo de decisão</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <section id="area__de__especialização">
+          <h3>Qual área gostaria de seguir?</h3>
+          <input
+            type="radio"
+            name="area__de__escolha__name"
+            class="area__de__especialização__front__end"
+            onclick="area__de__escolha()"
+          />
+          Front-End
+          <input
+            type="radio"
+            name="area__de__escolha__name"
+            class="area__de__especialização__back__end"
+            onclick="area__de__escolha()"
+          />
+          Back-End
+        </section>
+        <section id="front__end">
+          <h3>Qual tecnologia gostaria de se especializar:</h3>
+          <input
+            type="radio"
+            name="front__end_name"
+            class="front__end__react"
+            onclick="tecnologia__de__escolha()"
+          />
+          React
+          <input
+            type="radio"
+            name="front__end_name"
+            class="front__end__vue_js"
+            onclick="tecnologia__de__escolha()"
+          />
+          Vue.js
+          <input
+            type="radio"
+            name="front__end_name"
+            class="front__end__outros"
+            onclick="tecnologia__de__escolha()"
+          />
+          Outro
+        </section>
+        <section id="back__end">
+          <h3>Qual tecnologia gostaria de se especializar:</h3>
+          <input
+            type="radio"
+            name="back__end_name"
+            class="back__end__java"
+            onclick="tecnologia__de__escolha()"
+          />
+          Java
+          <input
+            type="radio"
+            name="back__end_name"
+            class="back__end__cSharp"
+            onclick="tecnologia__de__escolha()"
+          />
+          C#
+          <input
+            type="radio"
+            name="back__end_name"
+            class="front__end__outros"
+            onclick="tecnologia__de__escolha()"
+          />
+          Outro
+        </section>
+        <section id="full__stack">
+          <h3>Gostaria de seguir à area de full stack?</h3>
+          <input type="radio" name="full__stack_name" onclick="full_stack()"/>Sim
+          <input type="radio" name="full__stack_name" onclick="full_stack()"/>Não
+        </section>
+        <section id="outras__tecnologias">
+          <!--Prompt-->
+          <h3>Qual tecnologia(s) gostaria de se especializar ou conhecer?
+
+            Para finalizar aperte em cancelar!
+          </h3>
+          <input type="button" value="Clique aqui para escrever" onclick="outras__tecnologias()">
+        </section>
+        <script src="main.js"></script>
+      </form>
+    </main>
+  </body>
+</html>
