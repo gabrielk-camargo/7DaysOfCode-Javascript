@@ -1,0 +1,7 @@
+form input {
+  display: block;
+}
+
+.opicional__user input{
+    display: inline;
+}

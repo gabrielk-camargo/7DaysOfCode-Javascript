@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>7DaysOfCode - Lógica JS 2/7: 👩🏽‍💻 Variáveis</title>
+  </head>
+  <body>
+    <main>
+      <form id="userForm">
+        <input type="text" placeholder="Digite seu nome" id="userName" />
+        <input type="number" placeholder="Digite sua idade" id="userAge" />
+        <input
+          type="text"
+          placeholder="Digite a linguagem"
+          id="userLanguage"
+        />
+        <input type="button" value="Enviar" onclick="verificarDados(event)" />
+        <p id="userResposta"></p>
+      </form>
+      <form class="userOptional" style="display: none">
+        <p id="userMensagem"></p>
+        <input
+          type="radio"
+          id="optionYes"
+          name="opcao"
+          onclick="respostaOpcao(true)"
+        />
+        Sim
+        <input
+          type="radio"
+          id="optionNo"
+          name="opcao"
+          onclick="respostaOpcao(false)"
+        />
+        Não
+
+        <p id="respostaSim"></p>
+        <p id="respostaNao"></p>
+      </form>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
+
